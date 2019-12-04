@@ -1,4 +1,4 @@
-# aws-kinesis
+# aws-S3
 Using AWS S3 with Python and Boto3
 
 To use the AWS S3 functions, please follow the following steps:
