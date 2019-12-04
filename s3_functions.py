@@ -125,8 +125,8 @@ def put_lifecycle_policy(bucket_name):
     lifecycle_policy = {
         "Rules": [
             {
-                "ID": "Move readme file to Glacier",
-                "Prefix": "readme",
+                "ID": "Move text file to Glacier",
+                "Prefix": "textfile",
                 "Status": "Enabled",
                 "Transitions": [
                     {
