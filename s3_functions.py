@@ -25,9 +25,9 @@ def list_buckets():
     return s3_client().list_buckets()
 
 def delete_bucket(bucket_name):
-    return s3_client().delete_bucket(
-        Bucket=bucket_name
-    )
+    bucket = s3_resource().Bucket(bucket_name)
+    bucket.object_versions.delete()
+    bucket.delete()
 
 def create_bucket_policy(bucket_name):
     bucket_policy = {
